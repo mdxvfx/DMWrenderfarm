@@ -1,6 +1,25 @@
 param (
-    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "" )]
+    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "" )],
+    [string]$pass
 )
+
+function Show-Help {
+    Write-Host
+    Write-Host "Installation on Windows requires:"
+    Write-Host "    Name of the Avid share used for distributing render jobs to client PCs"
+    Write-Host "        (Defaults to RENDERFARM)"
+    Write-Host "    Name of the AD user used to mount the share"
+    Write-Host "        (Defaults to rendermonkey)"
+    Write-Host "    Standard AD password for the user mounting the render data share"
+    Write-Host "        (This is known to technicians responsible for maintaining the farm)"
+    Write-Host "    The password is not optional and must be supplied to this script"
+    
+    Exit 1
+}
+
+if( $pass.Trim( ) -eq "" ) {
+    Show-Help
+}
 
 function Write-Files {
 
