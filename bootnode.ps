@@ -14,7 +14,7 @@ function Check-Avid {
         foreach( driver in drivers ) {
             tokens = -split driver
             
-            if( tokens[0].startWith("Avid) -and tokens[5] -eq "Running" ) {
+            if( tokens[0].startWith("Avid") -and tokens[5] -eq "Running" ) {
                 avidrunning = $True
             }
         }
