@@ -2,9 +2,23 @@ param(
 
 )
 
+avidrunning = $False
 
 function Check-Avid {
-
+    
+    While( not avidrunning ) {
+        sleep(10)
+        
+        drivers = driverquery.exe /v
+        
+        foreach( driver in drivers ) {
+            tokens = -split driver
+            
+            if( tokens[0].startWith("Avid) -and tokens[5] -eq "Running" ) {
+                avidrunning = $True
+            }
+        }
+    }
 
 }
 
