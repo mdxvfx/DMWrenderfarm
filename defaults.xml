@@ -13,12 +13,16 @@
     <installerpath>$ROOT:__INSTALLERS__:</installerpath>
     
     <farm platform="RENDERPAL">
-        <installer os="Windows"></installer>
-        <installer os="darwin"></installer>
-        <installer os="linux"></installer>
+        <server>adsl.dmw.mdx.ac.uk</server>
+        
+        <installer os="Windows">rpclient_win.zip</installer>
+        <installer os="darwin">rpclient_mac.tar.bz2</installer>
+        <installer os="linux">rpclient_linux.tar.bz2</installer>
     </farm>
     
     <farm platform="OpenCUE">
+        <server>adsl.dmw.mdx.ac.uk</server>
+        
         <installer os="Windows"></installer>
         <installer os="darwin"></installer>
         <installer os="linux"></installer>
