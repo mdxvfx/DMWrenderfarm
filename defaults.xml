@@ -1,0 +1,28 @@
+<xml>
+    <mountpoint os="Windows">R:</mountpoint>
+    <mountpoint os="darwin">/Volumes</mountpoint>
+    <mountpoint os="linux">/mnt</mountpoint>
+    
+    <delimiter os="Windows">\</delimiter>
+    <delimiter os="darwin">/</delimiter>
+    <delimiter os="linux">/</delimiter>
+    
+    
+    <sharename>RENDERFARM</sharename>
+    
+    <installerpath>$ROOT:__INSTALLERS__:</installerpath>
+    
+    <farm platform="RENDERPAL">
+        <installer os="Windows"></installer>
+        <installer os="darwin"></installer>
+        <installer os="linux"></installer>
+    </farm>
+    
+    <farm platform="OpenCUE">
+        <installer os="Windows"></installer>
+        <installer os="darwin"></installer>
+        <installer os="linux"></installer>
+    </farm>
+    
+    
+</xml>
