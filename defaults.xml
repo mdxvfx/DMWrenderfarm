@@ -3,23 +3,27 @@
         <mountpoint os="Windows">R:</mountpoint>
         <mountpoint os="darwin">/Volumes</mountpoint>
         <mountpoint os="linux">/mnt</mountpoint>
-    
+        
+        <!--
         <delimiter os="Windows">\</delimiter>
         <delimiter os="darwin">/</delimiter>
         <delimiter os="linux">/</delimiter>
+        -->
     </drive>
     
-    <path drive="RENDERFARM">$ROOT:__INSTALLERS__:</path>
-    <path drive="RENDERFARM">$ROOT:TestFiles:</path>
+    <path drive="RENDERFARM">:__INSTALLERS__:</path>
+    <path drive="RENDERFARM">:TestFiles:</path>
     
     <drive name="SYSTEM">
         <mountpoint os="Windows">C:</mountpoint>
         <mountpoint os="darwin">/</mountpoint>
         <mountpoint os="linux">/</mountpoint>
     
+        <!--
         <delimiter os="Windows">\</delimiter>
         <delimiter os="darwin">/</delimiter>
         <delimiter os="linux">/</delimiter>
+        -->
     </drive>
     
     <path drive="SYSTEM" os="Windows"></path>
