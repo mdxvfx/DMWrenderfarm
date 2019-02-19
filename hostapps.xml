@@ -23,6 +23,13 @@
         <executable os="linux"></executable>
     </app>
     
+    <app name="djv_convert" version="1.1.0">
+        <!--<file_assoc></file_assoc>-->
+        <executable os="Windows"></executable>
+        <executable os="darwin">/Applications/djv-1.1.0-OSX-64/Contents/Resources/bin/djv_convert</executable>
+        <executable os="linux"></executable>
+    </app>
+    
     <app name="Houdini" version="17.0.416">
         <file_assoc>hip</file_assoc>
         <file_assoc>hipnc</file_assoc>
@@ -37,6 +44,13 @@
         <executable os="Windows"></executable>
         <executable os="darwin">/Applications/Autodesk/maya2018/Maya.app</executable>
         <executable os="linux"></executable>
+    </app>
+    
+    <app name="meshroom" version="2018.1">
+        <file_assoc>mr</file_assoc>
+        <executable os="Windows">C:\Program Files\meshroom2018.1\meshroom.exe</executable>
+        <!--<executable os="darwin"></executable>-->
+        <!--<executable os="linux"></executable>-->
     </app>
     
     <app name="Nuke" version="11.3v1">
