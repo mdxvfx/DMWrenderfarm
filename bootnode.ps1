@@ -30,7 +30,7 @@ function Parse-Defaults {
 }
 
 function Mount-Share {
-        net use R: RENDERFARM /USER:$username $password
+        net use \\AvidNEXIS\RENDERFARM R: /USER:$username $password
 }
 
 function Show-Help {
