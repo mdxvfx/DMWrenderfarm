@@ -1,6 +1,7 @@
 <xml>
     <!--
     <app name="" version="">
+        <file_assoc></file_assoc>
         <executable os="Windows"></executable>
         <executable os="darwin"></executable>
         <executable os="linux"></executable>
@@ -9,30 +10,38 @@
     
     
     <app name="After Effects" version="14.2.1x34">
+        <file_assoc>aep</file_assoc>
         <executable os="Windows"></executable>
         <executable os="darwin">/Applications/Adobe\ After\ Effects\ CC\ 2017/aerender</executable>
         <!--<executable os="linux"></executable>-->
     </app>
     
     <app name="Blender" version="2.79b">
+        <file_assoc>blend</file_assoc>
         <executable os="Windows"></executable>
         <executable os="darwin"></executable>
         <executable os="linux"></executable>
     </app>
     
     <app name="Houdini" version="17.0.416">
+        <file_assoc>hip</file_assoc>
+        <file_assoc>hipnc</file_assoc>
         <executable os="Windows"></executable>
         <executable os="darwin">/Application/Houdini/Houdini17.0.416/Houdini\ FX\ 17.0.416\</executable>
         <executable os="linux"></executable>
     </app>
     
     <app name="Maya" version="2018.3">
+        <file_assoc>mb</file_assoc>
+        <file_assoc>ma</file_assoc>
         <executable os="Windows"></executable>
         <executable os="darwin"></executable>
         <executable os="linux"></executable>
     </app>
     
     <app name="Nuke" version="11.3v1">
+        <file_assoc>nk</file_assoc>
+        <file_assoc>nknc</file_assoc>
         <executable os="Windows"></executable>
         <executable os="darwin">/Application/Nuke11.3v1/NukeX11.3v1.app/</executable>
         <executable os="linux"></executable>
