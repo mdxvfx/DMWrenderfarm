@@ -1,6 +1,8 @@
 param (
-    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "" )],
-    [string]$pass
+    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "Enter password: " )],
+    [string]$passwork
+    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "Enter default render share username: ")],
+    [string]$username
 )
 
 function Show-Help {
@@ -23,7 +25,7 @@ function Show-Help {
     Exit 1
 }
 
-if( $pass.Trim( ) -eq "" ) {
+if( $password.Trim( ) -eq "" ) {
     Show-Help
 }
 
