@@ -19,7 +19,7 @@
     <app name="Blender" version="2.79b">
         <file_assoc>blend</file_assoc>
         <executable os="Windows"></executable>
-        <executable os="darwin"></executable>
+        <executable os="darwin">/Applications/Blender/blender.app</executable>
         <executable os="linux"></executable>
     </app>
     
@@ -35,7 +35,7 @@
         <file_assoc>mb</file_assoc>
         <file_assoc>ma</file_assoc>
         <executable os="Windows"></executable>
-        <executable os="darwin"></executable>
+        <executable os="darwin">/Applications/Autodesk/maya2018/Maya.app</executable>
         <executable os="linux"></executable>
     </app>
     
