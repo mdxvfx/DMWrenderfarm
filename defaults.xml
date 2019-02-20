@@ -6,8 +6,8 @@
         
     </drive>
     
-    <path drive="RENDERFARM">:__INSTALLERS__:</path>
-    <path drive="RENDERFARM">:TestFiles:</path>
+    <path name="installers" drive="RENDERFARM">:__INSTALLERS__:</path>
+    <path name="tests" drive="RENDERFARM">:TestFiles:</path>
     
     <drive name="SYSTEM">
         <mountpoint os="Windows">C:</mountpoint>
@@ -16,9 +16,9 @@
     
     </drive>
     
-    <path drive="SYSTEM" os="Windows"></path>
-    <path drive="SYSTEM" os="darwin"></path>
-    <path drive="SYSTEM" os="linux"></path>
+    <path name="client" drive="SYSTEM" os="Windows">:render:etc</path>
+    <path name="client" drive="SYSTEM" os="darwin">render:etc</path>
+    <path name="client" drive="SYSTEM" os="linux">opt:render:etc</path>
     
     <farm platform="RENDERPAL">
         <server>adsl.dmw.mdx.ac.uk</server>
