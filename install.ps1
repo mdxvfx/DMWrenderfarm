@@ -1,9 +1,12 @@
 param (
-    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "Enter password: " )],
-    [string]$passwork
     [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "Enter default render share username: ")],
     [string]$username
+    [parameter( Mandatory = $true, ValueFromPipeline = $true, HelpMsg = "Enter password: " )],
+    [string]$password
 )
+
+$installpath
+$
 
 function Show-Help {
     Write-Host
@@ -28,6 +31,11 @@ function Show-Help {
 if( $password.Trim( ) -eq "" ) {
     Show-Help
 }
+
+function Parse-Defaults {
+    $defaults = Get-Content -path "defaults.xml"
+}
+
 
 function Write-Files {
     param( [string]$path = "C:\render\etc" )
