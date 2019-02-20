@@ -34,6 +34,11 @@ if( $password.Trim( ) -eq "" ) {
 
 function Parse-Defaults {
     $defaults = Get-Content -path "defaults.xml"
+    $os = "Windows"
+    
+    if( $HOME[0] -eq "/" ) {  //Hacky way to detect Mac
+        $os = "darwin"
+    }
 }
 
 
