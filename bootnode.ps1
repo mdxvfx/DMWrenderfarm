@@ -15,7 +15,7 @@ function Check-Avid {
         
         $drivers = driverquery.exe /v
         
-        foreach( $driver in $drivers ) {
+        foreach( $driver in $( $drivers -split "`r`n" )) {
             $tokens = -split $driver
             
             if( $tokens[0].startsWith("Avid") -and $tokens[5] -eq "Running" ) {
