@@ -1,4 +1,27 @@
 <xml>
+    <server alias="%ADSERVER%" name="adsl" domain="dmw.mdx.ac.uk" ip=""/>
+    
+    
+    <drive name="SYSTEM">
+        <mountpoint os="Windows">C:</mountpoint>
+        <mountpoint os="darwin">/</mountpoint>
+        <mountpoint os="linux">/</mountpoint>
+    
+    </drive>
+    
+    <!-- colons are swapped for native os delimiter -->
+    <path name="client" drive="SYSTEM" os="Windows">:render:etc</path>
+    <path name="client" drive="SYSTEM" os="darwin">render:etc</path>
+    <path name="client" drive="SYSTEM" os="linux">opt:render:etc</path>
+    
+    <drive name="SAFESTORAGE">
+        <mountpoint os="Windows">D:</mountpoint>
+        <mountpoint os="darwin">/Volumes/SAFESTORAGE</mountpoint>
+        <mountpoint os="linux></mountpoint>
+    </drive>
+                        
+                        
+                       
     <drive name="RENDERFARM">
         <mountpoint os="Windows">R:</mountpoint>
         <mountpoint os="darwin">/Volumes/RENDERFARM</mountpoint>
@@ -9,19 +32,10 @@
     <path name="installers" drive="RENDERFARM">:__INSTALLERS__:</path>
     <path name="tests" drive="RENDERFARM">:TestFiles:</path>
     
-    <drive name="SYSTEM">
-        <mountpoint os="Windows">C:</mountpoint>
-        <mountpoint os="darwin">/</mountpoint>
-        <mountpoint os="linux">/</mountpoint>
     
-    </drive>
-    
-    <path name="client" drive="SYSTEM" os="Windows">:render:etc</path>
-    <path name="client" drive="SYSTEM" os="darwin">render:etc</path>
-    <path name="client" drive="SYSTEM" os="linux">opt:render:etc</path>
     
     <farm platform="RENDERPAL">
-        <server>adsl.dmw.mdx.ac.uk</server>
+        <server>%ADSERVER%</server>
         
         <installer os="Windows">rpclient_win.zip</installer>
         <installer os="darwin">rpclient_mac.tar.bz2</installer>
@@ -29,12 +43,18 @@
     </farm>
     
     <farm platform="OpenCUE">
-        <server>adsl.dmw.mdx.ac.uk</server>
+        <server>%ADSERVER%</server>
         
         <installer os="Windows"></installer>
         <installer os="darwin"></installer>
         <installer os="linux"></installer>
     </farm>
     
-    
+    <farm platform="Pandora">
+        <server>%ADSERVER%</server>
+        
+        <installer os="Windows">Pandora_v1.0.3.exe</installer>
+        <!--<installer os="darwin"></installer>-->
+        <!--<installer os="linux"></installer>-->
+    </farm>
 </xml>
