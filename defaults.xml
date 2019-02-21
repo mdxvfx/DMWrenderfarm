@@ -17,7 +17,7 @@
     <drive name="SAFESTORAGE">
         <mountpoint os="Windows">D:</mountpoint>
         <mountpoint os="darwin">/Volumes/SAFESTORAGE</mountpoint>
-        <mountpoint os="linux></mountpoint>
+        <mountpoint os="linux"></mountpoint>
     </drive>
                         
                         
