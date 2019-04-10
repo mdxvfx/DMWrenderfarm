@@ -1,6 +1,6 @@
 <xml>
     <server alias="%ADSERVER%" name="adsl" domain="dmw.mdx.ac.uk" ip=""/>
-    
+    <server alias="%RENDERPALTEST%" name="" domain="dmw.mdx.ac.uk" ip=""/>
     
     <drive name="SYSTEM">
         <mountpoint os="Windows">C:</mountpoint>
